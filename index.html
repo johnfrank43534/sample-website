@@ -1,44 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>KyotoCompass</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
 </head>
 <body>
-    <header>
-        <div class="main">
-            <dir class="logo">
-                <img src="Back.png">
-            </dir>
-            <ul>
-                <li class="active"><a href="#"><i class="fa fa-home"></i></i> Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Restaurants</a></li>
-                <li><a href="#">Hotels</a></li>
-                <li><a href="#">Temples</a></li>
-                <li><a href="#">Shrines</a></li>
-                <li><a href="#">Castles</a></li>
-                <li><a href="#">Historical Sites</a></li>
-                <li><a href="#"><i class="fa fa-caret-down"></i> More Destinations</a>
-                <div class="sub-menu">
-                    <ul>
-                <li><a href="#">KyotoCity</a>
-                    <li><a href="#">KyotoPrefecture</a>>
-                    </ul>
-                </div>
-            </li>
-            </ul>
-        </div>
-        <div class="title">
-            <h1>KyotoCompass</h1>
-        </div>
-        <div class="button">
-            <a href="#" class="btn">Places</a>
-            <a href="#" class="btn">Festivals</a>
-            <a href="#" class="btn">More Info</a>
-        </div>
-     
-    </header>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#Activities" onclick="w3_close()" class="w3-bar-item w3-button">Activities</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16">ICT</div>
+    <div class="w3-center w3-padding-16">My Activities</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+    <hr id="Activities">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="ppt">
+    <div class="w3-quarter">
+      <img src="ppt.png" alt="ppt" style="width:100%">
+      <h3>Power Point Activity</h3>
+      <p>Made a PowerPoint presentation by designing slides, layouts, texts, images, and animations to convey information.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="exl.png" alt="exl" style="width:100%">
+      <h3>Excel Activity</h3>
+      <p>Used Excel to organise and analyse data using tables, charts, graphs, formulas, and formatting to visualise data better.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Web1.png" alt="Web1" style="width:100%">
+      <h3>Website 1</h3>
+      <p>Learned how to use Visual Studio Code to code my own website about a tourist website in Tokyo.</p>
+    </div>
+    <div class="w3-quarter">
+        <img src="Web2.png" alt="Web2" style="width:100%">
+        <h3>Website 2</h3>
+        <p>Applying my knowlege from the first website, made a second tourist website in Kyoto.</p>
+      </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <img src="1ppt.png" alt="1ppt" style="width:100%">
+      <h3>ICT Related Careers</h3>
+      <p>Made a PowerPoint explaining ICT related jobs and careers.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="Tesda.png" alt="Tesda" style="width:100%">
+      <h3>Microsoft Liteacy Certificate</h3>
+      <p>Took an online course and tests to learn more about Microsoft.</p>
+    </div>
+    <div class="w3-quarter">
+        <img src="Tesda2.png" alt="Tesda2" style="width:100%">
+        <h3>Wifi-101 Certificate</h3>
+        <p>Took an online course and tests to learn about Wi-Fi.</p>
+    </div>
+    <div class="w3-quarter">
+        <img src="Docum.png" alt="Dosument" style="width:100%">
+        <h3>Microsoft Liteacy Certificate</h3>
+        <p>Followed instructions to make a formal dosument using MS word or GDocs as a practical exam.</p>
+    </div>
+  </div>
+
+  <hr id="about">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>About Me</h3><br>
+    <img src="me.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>10-Samech Vice Mayor</b></h4>
+      <h6><i>Child of God</i></h6>
+      <p>I can do all thing through Christ who stregthens me. -Philippians 4:13</p>
+    </div>
+  </div>
+  <hr>
+  
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>FOOTER</h3>
+      <p>John Frank P. Odsey,  10-Samech,  2024,  ICT practical exam website making</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
 </body>
 </html>
